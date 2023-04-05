@@ -932,6 +932,8 @@ input[type=email]::placeholder {
          @media screen and (min-width: 428px) {
                 .container {
                         width: 428px;
+                        padding-left: 54px ;
+                        padding-right: 54px ;
                 }
                 .hero {
                         width: 428px;
@@ -942,6 +944,8 @@ input[type=email]::placeholder {
          @media screen and (min-width: 768px) {
                  .container {
                          width: 768px;
+                         padding-left: 136px;
+                         padding-right: 136px;
                  }
         
                  .hero {
@@ -958,6 +962,8 @@ input[type=email]::placeholder {
          @media screen and (min-width: 1158px) {
                  .container {
                          width: 1440px;
+                         padding-left: 472px;
+                         padding-right: 472px;
                  }
         
                  .hero {
