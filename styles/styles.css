@@ -154,8 +154,9 @@ color: #FFFFFF;
 }
 
 .features-list {
-        width: 264px;
-        height: 112px;
+        width: 100%;
+        
+
 }
 .features-top-icon {
         width: 64px;
@@ -163,7 +164,7 @@ color: #FFFFFF;
         
 }
 .features-container {
-        display: flex;
+        display: none;
         width: 264px;
         height: 112px;
         border-radius: 4px;
@@ -174,14 +175,16 @@ color: #FFFFFF;
 }
 
 .functional {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 1.2;
+        text-align: center; 
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
             letter-spacing: 0.02em;
             color: #2E2F42;
             margin-bottom: 8px;
 }
 .functional-description {
+        width: 100%;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -243,8 +246,8 @@ color: #FFFFFF;
         margin-bottom: 8px;
 }
 .customers-icon {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
 }
 
 .customers {
@@ -258,7 +261,7 @@ color: #FFFFFF;
         margin-bottom: 72px;
 }
 .customers-list {
-        display: flex;
+        display: block;
 }
 .item-icon {
         width: 168px;
@@ -443,22 +446,31 @@ img {
 }
 .features-top-list {
         display: flex;
-        gap: 24px;
+        flex-wrap: wrap;
+        gap: 72px;
+        width: 100%;
+        
+        
 }
 .section-two {
-        padding-top: 120px;
-        padding-bottom: 240px;
+        padding-top: 96px;
+        padding-bottom: 96px;
 }
 .our-work-container {
         display: flex;
         gap: 24px;
 }
 .section-three {
+        display: none;
         padding-bottom: 120px;
 }
 .team-list-top {
-        display: flex;
-        gap: 24px;
+        display: block;
+}
+
+.team-photo {
+        width: 100%;
+        height: auto;
 }
 
 .team-top-container {
@@ -500,19 +512,27 @@ img {
 
 
 .features-list {
-        width: calc((100% - 72px) /4);
+        
+        
 }
 .imeges-list {
         width: calc((100% - 48px) / 3);
 }
 .team-images {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
         background-color: #F4F4FD;
 }
-.team-list {
-        width: calc((100% - 72px) / 4);
+.team-list  {
+        width: 100%;
+        margin-bottom: 72px;
+        
 }
+
+.sp-class {
+        margin-bottom: 0;
+}
+
 .card-set {
         display: flex;
         flex-wrap: wrap;
@@ -932,20 +952,30 @@ input[type=email]::placeholder {
          @media screen and (min-width: 428px) {
                 .container {
                         width: 428px;
-                        padding-left: 54px ;
-                        padding-right: 54px ;
                 }
                 .hero {
                         width: 428px;
                 }
+
+                .page-title {
+                        width: 320px;
+                }
+
+                        /*=========customers==========*/
+                 .customers-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: calc((100% - 16px) / 2);
+                 }
+                
+                
+                        /*=========/customers==========*/
                 
          }
 
          @media screen and (min-width: 768px) {
                  .container {
                          width: 768px;
-                         padding-left: 136px;
-                         padding-right: 136px;
                  }
         
                  .hero {
@@ -956,21 +986,133 @@ input[type=email]::placeholder {
                         font-size: 56px;
                         line-height: 60px;
                  }
+
+                 .page-title {
+                        width: 496px;
+                 }
+
+                 .features-list {
+                         width: calc((100% - 24px) / 2);
+                
+                 }
+
+                 .features-top-list {
+                        gap: 72px 24px;
+                 }
+
+                 .functional {
+                        text-align: left;
+                 }
+
+                 .team-list-top {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        gap: 64px 24px;
+                 }
+
+                 .team-list {
+                        width: calc((100% - 24px) / 2);
+                        margin-bottom: 0;
+
+                 }
+
+                 /*=========customers==========*/
+                
+                
+                
+                 /*=========/customers==========*/
         
          }
 
          @media screen and (min-width: 1158px) {
                  .container {
                          width: 1440px;
-                         padding-left: 472px;
-                         padding-right: 472px;
+                        
+                 }
+
+                 .page-title {
+                         width: 496px;
                  }
         
                  .hero {
                          width: 1440px;
                  }
+
+                 .functional {
+                         text-align: center;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                 }
+
+                 .functional-description {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                 }
+
+                 .features-container {
+                         display: flex;
+                         
+                        }
+
+
+                 .features-list {
+                        width: calc((100% - 72px) / 4);
+
+                
+                }
+
+                .functional {
+                        text-align: left;
+                }
+                
+                .features-top-list {
+                        margin: auto;
+                        width: 1128px;
+                }
+
+                .section-two {
+                        padding-top: 120px;
+                        padding-bottom: 120px;
+                }
+
+                .section-three {
+                        display: flex;
+                }
+
+                .our-work-container {
+                        width: 1128px;
+                        margin: auto;
+                }
+
+                .team-images {
+                        display: flex;
+                }
+
+                .team-list {
+                        width: calc((100% - 72px) / 4);
+                }
+
+                .team-list-top {
+                        margin: auto;
+                        width: 1128px;
+                }
+                        
+                    /*=========customers==========*/ 
+
+                 
+
+                    /*=========/customers==========*/
+                    
+                    
+                
         
          }
+
+         
+                
 
          /* ================= /ADAPT=============================*/
 
