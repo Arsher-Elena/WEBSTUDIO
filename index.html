@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 <body>
-    <header class="page-header">
+    <header class="page-header ">
         <div class="container page-header-container">
         <nav class="navigation">
      <a class="logo link" href="./index.html">Web<span class="logo-web">Studio</span></a>
@@ -35,11 +35,69 @@
                 <li><a class="address link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-        <button type="button" class="menu-button-top">
+        <button type="button" class="menu-button-top" data-menu-open>
             <svg class="menu-button" width="30" height="19">
                 <use href="./images/menu-button.svg#icon-button-menu" ></use>
             </svg>
         </button>
+        </div>
+        <div class="mob-menu container is-hidden" data-menu>
+            <div>
+            <button type="button" class="menu-close-btn" data-menu-close>
+                <svg class="menu-btn-close" width="8" height="8">
+                    <use href="./images/close.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+            <ul class="tel-menu list">
+                <li class="tel-menu-item">
+                    <a class="current tel-menu-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="tel-menu-item">
+                    <a class="tel-menu-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="tel-menu-item">
+                    <a class="tel-menu-link link" href=""><span class="tel-span">Contacts</span></a>
+                </li>
+            </ul>
+           </div>
+           <div>
+            <address class="tel-contact-details">
+                <ul class="list tel-contakt-container">
+                    <li><a class="tel-address-mob link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li><a class="tel-address link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+            </address>
+            <ul class="team-mob-list list">
+                <li class="team-mob-item">
+                    <a class="team-mob-link list" href="">
+                        <svg width="24" height="24" class="team-mob-icon">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-mob-item">
+                    <a class="team-mob-link list" href="">
+                        <svg width="24" height="24" class="team-mob-icon">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-mob-item">
+                    <a class="team-mob-link list" href="">
+                        <svg width="24" height="24" class="team-mob-icon">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="team-mob-item">
+                    <a class="team-mob-link list" href="">
+                        <svg width="24" height="24" class="team-mob-icon">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
         </div>
     </header>
     <main>
@@ -459,5 +517,6 @@
     </div>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

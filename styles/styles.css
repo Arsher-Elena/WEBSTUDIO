@@ -46,7 +46,7 @@ ul {
         text-transform: uppercase;
         color: #4D5AE5;
         font-family: "Raleway", sans-serif;
-        margin-right: 76px;
+        margin-right: 120px;
 }
 .logo-footer {
         font-family: inherit;
@@ -62,7 +62,113 @@ ul {
 }
 
 
+.mob-menu {
+        padding-top: 0;
+        position: fixed;
+        width: 428px;
+        min-height: 796px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        background-color:  #FCFCFC;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.menu-close-btn {
+        background-color: transparent;
+        border: none;
+                position: absolute;
+                cursor: pointer;
+                top: 24px;
+                right: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color:  #FFFFFF;
+                border: 1px solid #E7E9FC;
+                fill: #2E2F42;
+        
+}
 
+.tel-menu {
+        padding-top: 56px;
+        padding-left: 25px;       
+}
+
+.tel-menu-item:not(:last-child) {
+        margin-bottom: 40px;
+}
+
+.tel-menu-item {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        
+}
+.tel-menu-link {
+        color: #2E2F42;
+}
+.tel-span {
+        color:#404BBF;
+}
+
+.tel-address-mob {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        color: #4D5AE5;       
+}
+.tel-address {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+.tel-contakt-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+}
+.tel-contact-details {
+        padding-left: 25px;
+        padding-right: 10px;
+}
+
+.team-mob-list {
+        display: flex;
+        gap: 56px;
+        padding-left: 25px;
+        padding-right: 45px;
+        padding-top: 48px;
+}
+
+.team-mob-item {
+        width: 40px;
+        height: 40px;
+}
+
+.team-mob-link {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #4D5AE5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 .hero {
@@ -403,6 +509,7 @@ img {
 
 .menu {
         gap: 40px;
+        margin-right: 120px;
 }
 
 
@@ -963,6 +1070,27 @@ input[type=email]::placeholder {
                         display: none;
                 }
 
+                .mob-menu.is-hidden {
+                        opacity: 0;
+                        visibility: hidden;
+                        pointer-events: none;
+                }
+
+                .menu-button {
+                        stroke: #2E2F42;
+                        
+                }
+                .menu-button-top {
+                        background-color: transparent;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                                
+
+                }
+
+                
+
                         /*=========customers==========*/
         
 
@@ -1141,18 +1269,17 @@ input[type=email]::placeholder {
                          pointer-events: none;
                  }
                  .contact-details {
-                        display: block;
+                       display: block;
                         font-style: normal;
+                        
                 } 
-                .contakt-container {
-                        display: flex;
-                        gap: 40px;
-                }
+               
                 .address {
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 16px;
-                        line-height: 1.5;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
                         letter-spacing: 0.02em;
                         color: #434455;
                         transition-property: color;
@@ -1165,6 +1292,20 @@ input[type=email]::placeholder {
                         color: var(--accent-color);
                 }
 
+                .page-header {
+                        padding: 0;
+                }
+
+                .contact-details {
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+                }
+                .contakt-container {
+                        display: block;
+                }
+
+                
+
 
                  /*===========/HEADER============*/
         
@@ -1174,6 +1315,11 @@ input[type=email]::placeholder {
                  .container {
                          width: 1440px;
                         
+                 }
+
+                 .page-header-container {
+                        width: 1128px;
+                        margin: auto;
                  }
 
                  .page-title {
@@ -1315,7 +1461,25 @@ input[type=email]::placeholder {
      
          }
 
+         .logo {
+                margin-left: 35px;
+                margin-right: 76px;
+                
+         }
+
          
+
+         @media screen and (min-width: 1158px) {
+        .contakt-container {
+                        display: flex;
+                        gap: 40px;
+                }
+        
+                .contact-details {
+                        padding-top: 24px;
+                        padding-bottom: 24px;
+                }
+         }
                 
 
          /* ================= /ADAPT=============================*/
