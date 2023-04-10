@@ -62,24 +62,26 @@ ul {
 
 
 .mob-menu {
-        padding: 80px 35px 40px 40px;
+        overflow-y: auto;
         position: fixed;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        width: 428px;
         background-color:  #FCFCFC;
 }
 
 .mob-menu-container {
-        margin-bottom: auto;
-        margin-bottom: 284px;
-}
-.mob-addres-container {
+        height: 100%;
+        padding: 80px 35px 40px 40px;
+        max-width: 428px;
+        margin: 0 auto;
+        position: relative;
         display: flex;
         flex-direction: column;
-        height: 100%;
+}
+.mob-addres-container {
+        margin-top: auto;
 }
 .menu-close-btn {
         background-color: transparent;
@@ -357,7 +359,8 @@ color: #FFFFFF;
 .customers-list  {
         display: flex;
         flex-wrap: wrap;
-        gap: 72px 24px;
+        gap: 72px 16px;
+        justify-content: center;
         }
 
   
@@ -417,6 +420,13 @@ color: #FFFFFF;
         margin-top: 16px;
         max-width: 264px;
         text-align: left;
+}
+
+.top-form {
+        width: 100%;
+}
+.footer-form {
+        width: 100%;
 }
 
 .social {
@@ -492,8 +502,10 @@ ol {
 img {
         display: block;
 }
+
+
 .container {
-        max-width: 426px;
+        
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
@@ -751,7 +763,8 @@ transform: translate(-50%, -50%) scaleX(0);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 408px;
+        width: 100%;
+        max-width: 408px;
         min-height: 584px;
         background: #FCFCFC;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -926,6 +939,7 @@ label {
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 2px;
         display: block;
+        flex-shrink: 0;
 }
 
 .modal-check:checked + .checkbox-text::before {
@@ -966,7 +980,7 @@ label {
 
 
         .email-form {
-                width: 398px;
+                width: 100%;
         }
         
                 input[type="email"]
@@ -1218,6 +1232,7 @@ input[type=email]::placeholder {
 
                  .top-form {
                         display: flex;
+                        
                  }
 
                  .form-button {
@@ -1378,9 +1393,14 @@ input[type=email]::placeholder {
                          gap: 40px;
                          margin-left: 76px;
                  }
+
+                 .hero {
+                        padding-top: 188px;
+                        padding-bottom: 188px;
+                 }
         
                  .hero {
-                         max-width: 1158px;
+                         max-width: 1440px;
                         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
                         url(../images/peopleoffice.jpg.jpg);
