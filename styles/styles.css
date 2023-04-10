@@ -46,7 +46,6 @@ ul {
         text-transform: uppercase;
         color: #4D5AE5;
         font-family: "Raleway", sans-serif;
-        margin-right: 120px;
 }
 .logo-footer {
         font-family: inherit;
@@ -63,16 +62,24 @@ ul {
 
 
 .mob-menu {
-        padding-top: 0;
+        padding: 80px 35px 40px 40px;
         position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
         width: 428px;
-        min-height: 796px;
-        padding-top: 24px;
-        padding-bottom: 40px;
         background-color:  #FCFCFC;
+}
+
+.mob-menu-container {
+        margin-bottom: auto;
+        margin-bottom: 284px;
+}
+.mob-addres-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        height: 100%;
 }
 .menu-close-btn {
         background-color: transparent;
@@ -93,9 +100,10 @@ ul {
         
 }
 
+.mob
+
 .tel-menu {
-        padding-top: 56px;
-        padding-left: 25px;       
+               
 }
 
 .tel-menu-item:not(:last-child) {
@@ -139,17 +147,13 @@ ul {
         flex-wrap: wrap;
         gap: 40px;
 }
-.tel-contact-details {
-        padding-left: 25px;
-        padding-right: 10px;
-}
+
 
 .team-mob-list {
         display: flex;
         gap: 56px;
-        padding-left: 25px;
-        padding-right: 45px;
-        padding-top: 48px;
+        margin-top: 48px;
+        
 }
 
 .team-mob-item {
@@ -175,8 +179,8 @@ ul {
         width: 100%;
         margin: auto;
         background-color: #2e2f42;
-        padding-top: 188px;
-        padding-bottom: 188px;
+        padding-top: 112px;
+        padding-bottom: 112px;
         background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)
@@ -269,6 +273,7 @@ color: #FFFFFF;
             margin-bottom: 8px;
 }
 .functional-description {
+        font-weight: 500;
         width: 100%;
         font-size: 16px;
         line-height: 1.5;
@@ -337,6 +342,8 @@ color: #FFFFFF;
 
 
 
+
+
 .customers {
         font-weight: 700;
         font-size: 36px;
@@ -350,7 +357,7 @@ color: #FFFFFF;
 .customers-list  {
         display: flex;
         flex-wrap: wrap;
-        gap: 72px 16px;
+        gap: 72px 24px;
         }
 
   
@@ -358,7 +365,6 @@ color: #FFFFFF;
 .item-icon {
         width: 190px;
         height: 88px;
-        
 }
 .icon-top-list {
         width: 104px;
@@ -487,7 +493,7 @@ img {
         display: block;
 }
 .container {
-        width: 100%;
+        max-width: 426px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
@@ -509,7 +515,7 @@ img {
 
 .menu {
         gap: 40px;
-        margin-right: 120px;
+        
 }
 
 
@@ -541,7 +547,8 @@ img {
 }
 
 .team-photo {
-        width: 100%;
+        display: block;
+        max-width: 100%;
         height: auto;
 }
 
@@ -595,10 +602,14 @@ img {
         padding-bottom: 96px;
         background-color: #F4F4FD;
 }
+
 .team-list  {
         width: 100%;
         margin-bottom: 72px;
         
+}
+.team-container {
+        max-width: 294px;
 }
 
 .sp-class {
@@ -1048,22 +1059,18 @@ input[type=email]::placeholder {
 
          /* ================= ADAPT=============================*/
 
-         @media screen and (min-width: 428px) {
-                .container {
-                        width: 428px;
-                }
+         @media screen and (min-width: 0px) {
+                
                 .hero {
-                        width: 428px;
+                        max-width: 428px;
                 }
 
-                .footer-section {
-                        width: 428px;
-                }
+                
 
                 .page-title {
                         width: 320px;
                 }
-                .menu-item {
+                .menu {
                         display: none;
                 }
                 .contact-details {
@@ -1085,6 +1092,7 @@ input[type=email]::placeholder {
                         border: none;
                         display: flex;
                         align-items: center;
+                        padding: 0;
                                 
 
                 }
@@ -1101,16 +1109,21 @@ input[type=email]::placeholder {
 
          @media screen and (min-width: 768px) {
                  .container {
-                         width: 768px;
+                         max-width: 768px;
                  }
         
                  .hero {
-                         width: 768px;
+                         max-width: 768px;
                  }
+                 .team-top-container {
+                        max-width: 264px;
+                 }
+                 .team-list {
+                        max-width: 264px;
+                 }
+                
 
-                 .footer-section {
-                         width: 768px;
-                 }
+                 
                  .menu-button-top {
                         display: none;
                  }
@@ -1130,6 +1143,10 @@ input[type=email]::placeholder {
                                          rgba(46, 47, 66, 0.7)),
                                          url(../images/plwers2.jpg);
                          }
+                 }
+
+                 .modal-btn {
+                        margin-top: 36px;
                  }
                  
                  .page-title {
@@ -1161,6 +1178,7 @@ input[type=email]::placeholder {
                         width: 100%;
                         gap: 64px 24px;
                  }
+                 
 
                  .team-list {
                         width: calc((100% - 24px) / 2);
@@ -1185,12 +1203,10 @@ input[type=email]::placeholder {
                  .footer-container {
                  margin: 0;
                  text-align: left;
-                 padding-left: 108px;
+                 
                 }
 
-                 .footer-form {
-                        padding-left: 108px;
-                 }
+                 
 
                  .form-name {
                         text-align: left;
@@ -1217,6 +1233,11 @@ input[type=email]::placeholder {
                  .footer-container-top {
                         gap: 72px 24px;
                  }
+                 .functional-description {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1.5;
+                }
                  
                  /*===========HEADER============*/
                  .menu {
@@ -1224,6 +1245,7 @@ input[type=email]::placeholder {
                  }
                  .menu {
                          gap: 40px;
+                         margin-left: 120px;
                  }
 
                  .menu-item {
@@ -1277,8 +1299,9 @@ input[type=email]::placeholder {
                 .address {
                         font-style: normal;
                         font-weight: 400;
-                        font-weight: 400;
                         font-size: 12px;
+                        display: block;
+                        margin-bottom: 12px;
                         line-height: 14px;
                         letter-spacing: 0.02em;
                         color: #434455;
@@ -1286,11 +1309,16 @@ input[type=email]::placeholder {
                         transition-duration: 250ms;
                         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 }
+                .not-mr {
+                        margin-bottom: 0;
+                }
         
                 .address:hover,
                 .address:focus {
                         color: var(--accent-color);
                 }
+
+                
 
                 .page-header {
                         padding: 0;
@@ -1303,6 +1331,20 @@ input[type=email]::placeholder {
                 .contakt-container {
                         display: block;
                 }
+                .team-container {
+                        max-width: 582px;
+                }
+
+                .customers-top-icon {
+                        max-width: 582px;
+                }
+
+                .footer-container-top {
+                        max-width: 582px;
+                }
+                .social {
+                        text-align: left;
+                }
 
                 
 
@@ -1313,8 +1355,11 @@ input[type=email]::placeholder {
 
          @media screen and (min-width: 1158px) {
                  .container {
-                         width: 1440px;
+                         max-width: 1158px;
                         
+                 }
+                 .hero {
+                        max-width: 1440px;
                  }
 
                  .page-header-container {
@@ -1328,9 +1373,14 @@ input[type=email]::placeholder {
                  .menu-button-top {
                          display: none;
                  }
+
+                 .menu {
+                         gap: 40px;
+                         margin-left: 76px;
+                 }
         
                  .hero {
-                         width: 1440px;
+                         max-width: 1158px;
                         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
                         url(../images/peopleoffice.jpg.jpg);
@@ -1346,9 +1396,7 @@ input[type=email]::placeholder {
                          }
                  }
 
-                 .footer-section {
-                        width: 1440px;
-                 }
+                 
 
                  .footer-container-top {
                         width: 1128px;
@@ -1381,6 +1429,14 @@ input[type=email]::placeholder {
 
                 
                 }
+                .address {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        margin-bottom: 0;
+                }
+
+
 
                 .functional {
                         text-align: left;
@@ -1442,7 +1498,9 @@ input[type=email]::placeholder {
                     }
 
                  
-                 
+                 .modal-btn {
+                        margin-top: 48px;
+                 }
                 
 
                     .footer-section {
@@ -1461,11 +1519,7 @@ input[type=email]::placeholder {
      
          }
 
-         .logo {
-                margin-left: 35px;
-                margin-right: 76px;
-                
-         }
+         
 
          
 
