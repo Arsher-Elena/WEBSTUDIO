@@ -83,6 +83,9 @@ ul {
 .mob-addres-container {
         margin-top: auto;
 }
+
+
+
 .menu-close-btn {
         background-color: transparent;
         border: none;
@@ -107,6 +110,7 @@ ul {
 .tel-menu {
                
 }
+
 
 .tel-menu-item:not(:last-child) {
         margin-bottom: 40px;
@@ -505,7 +509,7 @@ img {
 
 
 .container {
-        
+        max-width: 428px;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
@@ -523,6 +527,7 @@ img {
 }
 .page-header-container {
         display: flex;
+        max-width: 428px;
 }
 
 .menu {
@@ -577,6 +582,7 @@ img {
 
 
 .page-header {
+        
         border-bottom: 1px solid #E7E9FC;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -1079,7 +1085,15 @@ input[type=email]::placeholder {
                         max-width: 428px;
                 }
 
+                                @media screen and (max-width: 428px) {
+                                        .tel-address-mob {
+                                                font-size: 20px;
+                                        }
                 
+                                        .team-mob-list {
+                                                gap: 20px;
+                                        }
+                                }
 
                 .page-title {
                         width: 320px;
@@ -1220,7 +1234,10 @@ input[type=email]::placeholder {
                  
                 }
 
-                 
+                                 .customers-list {
+                                         gap: 72px 24px;
+                                        
+                                 }
 
                  .form-name {
                         text-align: left;
@@ -1243,6 +1260,9 @@ input[type=email]::placeholder {
 
                  .footer-container-two {
                         margin: 0;
+                 }
+                 .footer-form {
+                        width: 453px;
                  }
 
                  .footer-container-top {
@@ -1403,7 +1423,7 @@ input[type=email]::placeholder {
                          max-width: 1440px;
                         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                        url(../images/peopleoffice.jpg.jpg);
+                        url(../images/peopleoffice.jpg);
                  }
 
                  @media (min-device-pixel-ratio: 2),
@@ -1419,7 +1439,7 @@ input[type=email]::placeholder {
                  
 
                  .footer-container-top {
-                        width: 1128px;
+                        width: 1158px;
                         display: flex;
                         flex-wrap: nowrap;
                         gap: 0;
@@ -1532,6 +1552,7 @@ input[type=email]::placeholder {
                     }
                     .footer-form {
                         padding: 0;
+                       
                     }
 
                     /*===========/FOOTER============*/
